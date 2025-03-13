@@ -1,0 +1,145 @@
+/* General Page Styling */
+body {
+    font-family: "EB Garamond", serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centered Signup Container */
+.signup-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0ffff;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+    font-family: "Madimi One", serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Colorful Title Effect */
+.colorful-title {
+    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Info Container */
+.information {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Info Box */
+.info {
+    display: flex;
+    align-items: center;
+    background-color: #00d9ff;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: 400;
+    color: #333;
+    width: 100%;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.info:hover {
+    background-color: #00b8e6;
+}
+
+/* Labels */
+.info-label {
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+    position: relative;
+    padding-right: 12px;
+}
+
+/* Vertical Divider */
+.info-label::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 2px;
+    height: 80%;
+    background-color: #333;
+}
+
+/* Input Fields */
+.info-input {
+    flex: 2;
+    text-align: left;
+    padding-left: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none; /* Fully transparent */
+    color: #333; /* Text color */
+    width: 100%;
+}
+
+/* Placeholder Styling */
+.info-input::placeholder {
+    color: rgba(0, 0, 0, 0.6); /* Slightly darker for better readability */
+    font-weight: 400;
+}
+
+/* Input Focus Effect */
+.info-input:focus {
+    background: none; /* Ensures background stays transparent */
+
+    border-radius: 0; /* Removes any unwanted rounding */
+}
+.signup {
+    display: flex;
+    
+}
+.signup-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    align-items:center;
+    background-color: #00d9ff;
+    padding: 14px;
+    border-radius: 10px;
+    border:none;
+    font-weight: 400;
+    color: #333;
+    width: 70%;
+    transition: background 0.3s ease-in-out;
+}
+.signup-button:hover{
+    background-color: #00b3d1;
+    transform: scale(1.05);
+    box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.6s ease-in-out;
+}

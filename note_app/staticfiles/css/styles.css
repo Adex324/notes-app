@@ -1,0 +1,7 @@
+.signup_body{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh;
+    background-color: red; /* Full viewport height */
+ }

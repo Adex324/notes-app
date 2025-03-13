@@ -1,0 +1,41 @@
+.signup-body {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    
+    /* Center the entire div */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #e0ffff;
+    height: 70%;
+    width: 35%;
+    border: 10px;
+    border-radius: 50px;
+}
+
+.information{
+line-height: 40px;
+
+}
+h1{
+    margin: 10px;
+    size: 20px;
+}
+.info{
+    height: 60px;
+    width: 70%;
+
+    border: 90px;
+    border-radius: 10px;
+    background-color:#00ffff;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+}
+.info-text{
+    margin: 10px;
+}
