@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-(m(x3*o)6v26pd7p+a36(=y&@ezkt(kb2y_mm==xt)e_x_tzhn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS =['.vercel.app']
 
 # Application definition
 
@@ -131,7 +130,7 @@ LOGIN_URL = "login"
 LOGIN_REDIRECT_URL = 'notes'
 LOGOUT_REDIRECT_URL = 'login'
 
-ALLOWED_HOSTS =['.vercel.app']
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
