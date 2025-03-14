@@ -130,7 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Ensure Django knows where your development static files are
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'note_app','note_app', 'static'),
+    os.path.join(BASE_DIR, 'note_app/note_app/static'),
 ]
 
 print(f"BASE_DIR: {BASE_DIR}")
