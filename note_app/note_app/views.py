@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
-from note_app import models
-from note_app.models import NOTE
+from note_app.note_app import models
+from note_app.note_app.models import NOTE
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate,login,logout
