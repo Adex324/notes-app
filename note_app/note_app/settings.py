@@ -123,7 +123,7 @@ USE_TZ = True
 
 import os
 
-STATIC_URL = '/static/'  
+STATIC_URL = 'note_app/static/'  
 
 # Collects all static files into this directory when running `collectstatic`
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
