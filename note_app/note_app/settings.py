@@ -130,9 +130,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Ensure Django knows where your development static files are
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'note_app/note_app/static'),
+    os.path.join(BASE_DIR, 'note_app', 'static'),
 ]
 
+print(f"BASE_DIR: {BASE_DIR}")
+print(f"STATIC_URL: {STATIC_URL}")
+print(f"STATIC_ROOT: {STATIC_ROOT}")
+print(f"STATICFILES_DIRS: {STATICFILES_DIRS}")
 LOGIN_URL = "login"
 LOGIN_REDIRECT_URL = 'notes'
 LOGOUT_REDIRECT_URL = 'login'
