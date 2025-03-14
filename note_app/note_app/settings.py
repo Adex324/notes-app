@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import dj_database_url
 import os
 from pathlib import Path    
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS =os.environ.get("ALLOWED_HOSTS").split(" ")
-
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',')
 # Application definition
 
 INSTALLED_APPS = [
@@ -126,7 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Ensure Django knows where your development static files are
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'note_app', 'note_app', 'static'),
+    os.path.join(BASE_DIR, 'note_app','note_app', 'static'),
 ]
 LOGIN_URL = "login"
 LOGIN_REDIRECT_URL = 'notes'
