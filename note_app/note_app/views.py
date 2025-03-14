@@ -16,7 +16,7 @@ def signup_view(request):
         my_user.save()
         return redirect('/login')
     
-    return render(request, 'note_app/signup.html')
+    return render(request, 'signup.html')
 
 def login_view(request):
     if request.method=='POST':
@@ -29,7 +29,7 @@ def login_view(request):
             return redirect('/notes')
         else:
             return redirect('/login')
-    return render(request, 'note_app/login.html')
+    return render(request, 'login.html')
 
 @login_required(login_url='/login')
 def notes_view(request):
@@ -42,7 +42,7 @@ def notes_view(request):
         res=models.NOTE.objects.filter(user=request.user).order_by('-date')
         return redirect('/notes',{'res':res})
     res=models.NOTE.objects.filter(user=request.user).order_by('-date')
-    return render(request, 'note_app/notes.html', {'res':res})
+    return render(request, 'notes.html', {'res':res})
 @login_required(login_url='/login')
 def edit_notes_view(request,srno):
     if request.method=='POST':
