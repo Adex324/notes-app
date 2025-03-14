@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'note_app.urls'
+ROOT_URLCONF = 'note_app.note_app.urls'
 
 TEMPLATES = [
     {
