@@ -125,7 +125,7 @@ import os
 
 STATIC_URL = 'note_app\static' 
 # Collects all static files into this directory when running `collectstatic`
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'note_app\staticfiles')
 
 # Ensure Django knows where your development static files are
 STATICFILES_DIRS = [
