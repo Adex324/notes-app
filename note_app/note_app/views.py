@@ -57,7 +57,7 @@ def edit_notes_view(request,srno):
         return redirect('/notes')
     obj=models.NOTE.objects.get(srno=srno)
     
-    return render(request, '/edit_notes.html', {'note': obj})
+    return render(request, 'edit_notes.html', {'note': obj})
 @login_required(login_url='/login')
 def delete_notes_view(request,srno):
     obj=models.NOTE.objects.get(srno=srno)
